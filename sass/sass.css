@@ -1,0 +1,57 @@
+@import url(_variable.scss);
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  -moz-box-sizing: border-box;
+  /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, autres WebKit */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  margin: 15px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 510;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=sass.css.map */
