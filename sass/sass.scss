@@ -1,4 +1,4 @@
-@import url(_variable.scss);
+@import "./_variable.scss";
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -54,3 +54,252 @@ img {
   }
 
   
+
+  /*Header*/
+
+  .header-title {
+    display:flex;
+    justify-content: center;
+    position:relative;
+   
+}
+
+.header-menu {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    
+}
+
+.fa-arrow-left {
+    font-size:22px;
+    position:absolute;
+    left:20px;
+    top: 20px;
+}
+
+
+/*Hero*/
+.hero {
+  padding:50px 20px;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  background-color: #f6f6f6;
+}
+
+.hero h2 {
+  text-align:center;
+  margin-bottom:12px;
+  @media screen and (max-width:768px){
+      max-width:250px;
+  }
+  
+}
+
+.hero-text {
+  color:#4d4d4dcc;
+  text-align:center;
+  font-size:19px;
+  font-weight:400;
+  margin-bottom:30px;
+}
+.hero-btn, .ordering-btn {
+  border-radius: 200px;
+  padding: 17px 40px;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border-color: #ffff;
+  color: #ffff;
+  filter: brightness(1);
+  transition: all 0.25s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Location*/
+.location {
+  display: flex;
+  background-color:#eaeaea;
+  padding:15px;
+  justify-content: center;
+  gap:15px;
+}
+
+/*Opération*/
+.operation {
+  padding:40px;
+  @media screen and (max-width: 768px){
+      padding:60px 20px;
+  }
+}
+
+.operation h2 {
+  text-align: center;
+  margin-bottom:25px;
+  @media screen and (max-width: 768px){
+      text-align:left;
+  }
+}
+
+.operation-steps {
+  padding:10px;
+  display:flex;
+  justify-content: center;
+  gap:40px;
+  @media screen and (max-width: 768px){
+      flex-direction:column;
+      gap:22px;        
+  }
+}
+
+.operation-step {
+  position:relative;
+  display:flex;
+  align-items:center;
+  background-color:$backgroundColorBloc;
+  padding:25px 38px;
+  border-radius:20px;
+  box-shadow:$boxshadowColorCard;
+  cursor: pointer;
+  &:hover {
+      background-color:$colorOperationCardHover;
+      .operation-icon {
+          color:$colorPrimary;
+      }
+  }
+}
+
+.operation-number {
+  position: absolute;
+  left:-8px;
+  border-radius: 200px;
+  background-color:$colorPrimary;
+  color: #ffff;
+  padding: 5px 9px;
+}
+
+.operation-step p {
+  margin-left: 25px;
+}
+.operation-icon {
+  color: #7d7d7d;
+  text-align:center;
+  width:20px;
+  font-size:20px;
+}
+
+/*Restaurants*/
+.restaurants {
+  padding:50px 20px;
+  background-color:$backgroundColorBloc;
+  h2 {
+      margin-bottom: 25px;
+  }
+}
+
+.restaurants-lists {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  @media screen and (max-width:768px) {
+      display:flex;
+      flex-direction:column;
+  }
+}
+
+.restaurant-card {
+  position:relative;
+  width: 25%;
+  background-color:#ffff;
+  border-radius: 20px;
+  box-shadow: $boxshadowColorCard;
+  @media screen and (max-width: 768px){
+      width: 100%;
+  }
+}
+
+.restaurant-image {
+  height:180px;
+  width:100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
+.restaurant-block {
+  position:relative;
+  padding:15px;
+  display:flex;
+  justify-content: space-between;
+  h4 {
+      margin-bottom:5px;
+  }
+}
+
+.new-restaurant {
+  color:$colorNewMenu;
+  padding:7px 12px;
+  background-color:$colorTertiary;
+  position:absolute;
+  top:10px;
+  right:12px;
+  font-size:14px;
+}
+
+.restaurant-location {
+  font-size: 16px;
+  font-weight:350;
+}
+
+
+
+
+
+/*Footer*/
+footer {
+  background-color:$backgroundColorFooter;
+  color:#ffff;
+  padding:40px 20px;
+  display:flex;
+  justify-content: space-between;
+  @media screen and (max-width:768px) {
+      flex-direction: column;
+  }
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family:'Shrikhand', cursive;
+}
+
+.footerlist {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footerlist-icon {
+  text-align: center;
+  font-size:12px;
+  width:12px;
+}
+
+.footer-nav-bar{
+  margin-left: 100px;
+  display:flex;
+  @media screen and (max-width:768px) {
+      flex-direction: column;
+      margin-left:0px;
+      margin-top:20px;
+  }
+}
+
+.footer-nav-bar a {
+  list-style: none;
+  display:flex;
+  padding: 0px 30px;
+  align-items: center;
+  gap:10px;
+  @media screen and (max-width:768px) {
+      padding: 5px 0px;
+  }
+}

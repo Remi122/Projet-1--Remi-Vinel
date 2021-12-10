@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ohmyfood!</title>
     <!--link css files-->
-    <link rel="stylesheet" href="./public/css/style.css"/>
+    <link rel="stylesheet" href="./sass/sass.css"/>
     <!--google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
         </div>
     
     <!--hero-->  
-        <section class="pa">
+        <section class="hero">
             <h2>Réservez le menu qui vous convient</h2>
             <p class="hero-text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <a href="#restaurants" class="hero-btn">Explorer nos restaurants</a>
@@ -73,62 +73,64 @@
         </section>
     
         <!--Restaurants-->
-        <h2>Restaurants</h2>
-        <div class="restaurants-lists">
-            <article class="restaurant-card">
-                <a href="pagesMenu/la-palette-du-gout.html">
-                    <img class="restaurant-image" src="./public/images/restaurants/LaPaletteDuGout.webp" alt="La Palette du goût">
-                    <div class="new-restaurant">Nouveau</div>
-                    <div class="restaurant-block">
-                        <div class="restaurant-block-text">
-                            <h4>La palette du goût</h4>
-                            <span class="restaurant-location">Ménilmontant</span>
-                        </div> 
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </article>
-                                   
-            <article class="restaurant-card">
-                <a href="pagesMenu/la-note-enchantee.html">
-                    <img class="restaurant-image" src="./public/images/restaurants/LaNoteEnchantée.webp" alt="La note enchantée">
-                    <div class="new-restaurant">Nouveau</div>
-                    <div class="restaurant-block">
-                        <div class="restaurant-block-text">
-                            <h4>La note enchantée</h4>
-                            <span class="restaurant-location">Charonne</span>
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants-lists">
+                <article class="restaurant-card">
+                    <a href="pagesMenu/la-palette-du-gout.html">
+                        <img class="restaurant-image" src="./public/images/restaurants/LaPaletteDuGout.webp" alt="La Palette du goût">
+                        <div class="new-restaurant">Nouveau</div>
+                        <div class="restaurant-block">
+                            <div class="restaurant-block-text">
+                                <h4>La palette du goût</h4>
+                                <span class="restaurant-location">Ménilmontant</span>
+                            </div> 
+                            <i class="far fa-heart" aria-hidden="true"></i>
                         </div>
-                        <i class="far fa-heart" aria-hidden="true"></i>            
-                    </div>
-                </a>
-            </article>
-    
-            <article class="restaurant-card">
-                <a href="pagesMenu/a-la-francaise.html">
-                    <img class="restaurant-image" src="./public/images/restaurants/ALaFrancaise.webp" alt="A la française">
-                    <div class="restaurant-block">
-                        <div class="restaurant-block-text">
-                            <h4>A la française</h4>
-                            <span class="restaurant-location">Cité Rouge</span>
+                    </a>
+                </article>
+                                       
+                <article class="restaurant-card">
+                    <a href="pagesMenu/la-note-enchantee.html">
+                        <img class="restaurant-image" src="./public/images/restaurants/LaNoteEnchantée.webp" alt="La note enchantée">
+                        <div class="new-restaurant">Nouveau</div>
+                        <div class="restaurant-block">
+                            <div class="restaurant-block-text">
+                                <h4>La note enchantée</h4>
+                                <span class="restaurant-location">Charonne</span>
+                            </div>
+                            <i class="far fa-heart" aria-hidden="true"></i>            
                         </div>
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </article>
+                    </a>
+                </article>
+        
+                <article class="restaurant-card">
+                    <a href="pagesMenu/a-la-francaise.html">
+                        <img class="restaurant-image" src="./public/images/restaurants/ALaFrancaise.webp" alt="A la française">
+                        <div class="restaurant-block">
+                            <div class="restaurant-block-text">
+                                <h4>A la française</h4>
+                                <span class="restaurant-location">Cité Rouge</span>
+                            </div>
+                            <i class="far fa-heart" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </article>
 
-            <article class="restaurant-card">
-                <a href="pagesMenu/le-delice-des-sens.html">
-                    <img class="restaurant-image" src="./public/images/restaurants/LeDeliceDesSens.webp" alt="Le délice des sens">
-                    <div class="restaurant-block">
-                        <div class="restaurant-block-text">
-                            <h4>Le délice des sens</h4>
-                            <span class="restaurant-location">Folie-Méricourt</span>
+                <article class="restaurant-card">
+                    <a href="pagesMenu/le-delice-des-sens.html">
+                        <img class="restaurant-image" src="./public/images/restaurants/LeDeliceDesSens.webp" alt="Le délice des sens">
+                        <div class="restaurant-block">
+                            <div class="restaurant-block-text">
+                                <h4>Le délice des sens</h4>
+                                <span class="restaurant-location">Folie-Méricourt</span>
+                            </div>
+                            <i class="far fa-heart" aria-hidden="true"></i>
                         </div>
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </article>
-        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
     
     <!--footer-->
     <footer>

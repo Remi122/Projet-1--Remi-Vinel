@@ -6,3 +6,18 @@ $colorTertiary: #99E2D0;
 $colorOperationCardHover:#f5edff;
 $colorNewMenu:#008766;
 
+//backgroundColor
+
+$backgroundColorBloc:#f6f6f6;
+$backgroundColorFooter:#353535;
+
+//boxshadow
+$boxshadowColorHeader:0 2px 4px 0 rgba(0, 0, 0, 0.2);
+$boxshadowColorCard:1px 4px 10px 0 rgba(0, 0, 0, 0.1);
+$boxshadowHeroButtonHover:2px 8px 8px 0 rgba(0, 0, 0, 0.3);
+
+//gradient 
+$gradient:linear-gradient(175deg, $colorSecondary, $colorPrimary);
+
+//transition-timing
+$transitionTimingLoader:cubic-bezier(1,.08,.96,.2);
