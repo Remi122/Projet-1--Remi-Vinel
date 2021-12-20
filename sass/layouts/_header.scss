@@ -1,0 +1,21 @@
+.header-title {
+    display:flex;
+    justify-content: center;
+    position:relative;
+    box-shadow:$boxshadowColorHeader;
+}
+
+.header-menu {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    
+}
+
+.fa-arrow-left {
+    font-size:22px;
+    position:absolute;
+    left:20px;
+    top: 20px;
+}

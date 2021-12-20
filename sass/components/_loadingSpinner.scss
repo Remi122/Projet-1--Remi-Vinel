@@ -1,0 +1,42 @@
+.page-loading-spinner {
+    background-color:$backgroundColorBloc;
+    position:fixed;
+    z-index: 10;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:fade-in 3s $transitionTimingLoader forwards;
+  }
+
+.loading-spinner {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 12px solid;
+    border-color:$colorPrimary $colorTertiary $colorSecondary $colorPrimary;
+    animation: spin 1s linear infinite;
+  }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0.9;   
+    }
+    100% {
+        opacity: 0;
+        z-index:-1;
+    }
+  }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        z-index: -1;
+    }
+}
+  

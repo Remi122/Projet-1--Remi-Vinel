@@ -1,0 +1,16 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/functions";
+@import "./base/base";
+@import "./components/heroButton";
+@import "./components/heartButton";
+@import "./components/loadingSpinner";
+@import "./components/orderingButton";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/menu";
+@import "./pages/location";
+@import "./pages/hero";
+@import "./pages/operation";
+@import "./pages/restaurants";
+

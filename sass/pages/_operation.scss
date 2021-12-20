@@ -1,0 +1,62 @@
+.operation {
+    padding:40px;
+    @media screen and (max-width: 768px){
+        padding:60px 20px;
+    }
+}
+
+.operation h2 {
+    text-align: center;
+    margin-bottom:25px;
+    @media screen and (max-width: 768px){
+        text-align:left;
+    }
+}
+
+.operation-steps {
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    @media screen and (max-width: 768px){
+        flex-direction:column;
+        gap:22px;        
+    }
+}
+
+.operation-step {
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-color:$backgroundColorBloc;
+    padding:25px 38px;
+    border-radius:20px;
+    box-shadow:$boxshadowColorCard;
+    cursor: pointer;
+    &:hover {
+        background-color:$colorOperationCardHover;
+        .operation-icon {
+            color:$colorPrimary;
+        }
+    }
+}
+
+.operation-number {
+    position: absolute;
+    left:-8px;
+    border-radius: 200px;
+    background-color:$colorPrimary;
+    color: #ffff;
+    padding: 5px 9px;
+}
+
+.operation-step p {
+    margin-left: 25px;
+}
+.operation-icon {
+    color: #7d7d7d;
+    text-align:center;
+    width:20px;
+    font-size:20px;
+}
+
