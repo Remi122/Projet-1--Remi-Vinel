@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
@@ -12,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
   }
-
+*/
 a {
     text-decoration: none;
     color:inherit;
@@ -20,7 +21,7 @@ a {
   }
 
 h1 {
-    font-family:'Shrikhand', cursive;
+    font-family:'Shrikhand';
     margin: 15px;
   }
 
@@ -45,8 +46,10 @@ h4 {
     cursor:pointer;
   }
 
-img {
+ 
+  img {
     display:block;
     max-width: 100%;
     object-fit: cover;
   }
+  

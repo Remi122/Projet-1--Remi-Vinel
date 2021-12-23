@@ -1,3 +1,10 @@
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #000000;
@@ -45,13 +52,6 @@ h4 {
 
 .btn {
   cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .hero-btn, .ordering-btn {
@@ -167,9 +167,16 @@ img {
   top: 20px;
 }
 
-img#header-logo {
+#header-logo {
   width: 200px;
   margin: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
