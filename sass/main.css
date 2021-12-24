@@ -1,10 +1,3 @@
-img {
-  display: block;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #000000;
@@ -30,7 +23,7 @@ a {
 }
 
 h1 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
   margin: 15px;
 }
 
@@ -54,6 +47,13 @@ h4 {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .hero-btn, .ordering-btn {
   border-radius: 200px;
   padding: 17px 40px;
@@ -75,7 +75,7 @@ h4 {
   font-size: 26px;
   background-size: 100% 0%;
   background-position: bottom;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .fa-heart:hover {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
@@ -146,6 +146,11 @@ h4 {
     z-index: -1;
   }
 }
+.header-menu-logo {
+  width: 200px !important;
+  margin: 20px !important;
+}
+
 .header-title {
   display: flex;
   justify-content: center;
@@ -165,18 +170,6 @@ h4 {
   position: absolute;
   left: 20px;
   top: 20px;
-}
-
-#header-logo {
-  width: 200px;
-  margin: 20px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 footer {
@@ -362,18 +355,18 @@ footer {
 }
 
 .delay-bloc-1 {
-  -webkit-animation: card-in 1s ease-in;
-          animation: card-in 1s ease-in;
+  -webkit-animation: card-in 2s ease-in;
+          animation: card-in 2s ease-in;
 }
 
 .delay-bloc-2 {
-  -webkit-animation: card-in 2s ease-in 0.1s;
-          animation: card-in 2s ease-in 0.1s;
+  -webkit-animation: card-in 4s ease-in 0.1s;
+          animation: card-in 4s ease-in 0.1s;
 }
 
 .delay-bloc-3 {
-  -webkit-animation: card-in 3s ease-in 0.1s;
-          animation: card-in 3s ease-in 0.1s;
+  -webkit-animation: card-in 5s ease-in 0.1s;
+          animation: card-in 5s ease-in 0.1s;
 }
 
 @-webkit-keyframes card-in {

@@ -125,15 +125,15 @@
 }
 
 .delay-bloc-1 {
-    animation: card-in 1s ease-in;
+    animation: card-in 2s ease-in;
 }
 
 .delay-bloc-2 {
-    animation: card-in 2s ease-in 0.1s;
+    animation: card-in 4s ease-in 0.1s;
 }
 
 .delay-bloc-3 {
-    animation: card-in 3s ease-in 0.1s;
+    animation: card-in 5s ease-in 0.1s;
 }
 
 @keyframes card-in {
